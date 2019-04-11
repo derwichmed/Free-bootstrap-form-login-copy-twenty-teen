@@ -1,0 +1,151 @@
+body{
+    background-image: url('../img/backgroud.png');
+    background-size: 100% 100%;
+}
+body > header{
+    background-color: rgba(45,45,45,.60);
+    height: 62px;
+    padding-right: 60px;
+}
+.nav_bar .nav_bar_item{
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer
+}
+.nav_bar .nav_bar_item a{
+    color: #91919b;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+.nav_bar .nav_bar_item a:hover{
+    text-decoration: none
+}
+.nav_bar .nav_bar_item:hover{
+    background-color: rgba(45,45,45,.80);
+}
+.nav_bar .search_icon img{
+    width: 20px;
+    height: 20px
+}
+body > header .sigle img{
+    width: 150px;
+    height: 45px;
+    margin-top: 5px
+}
+body > header .icons_links{
+    padding-top: 18px
+}
+body > header .icons_links img{
+    width: 28px;
+    height: 28px
+}
+.form_login{
+    margin-top: 70px
+}
+.form_login > div:nth-child(1){
+    background-color: rgba(45,45,45,.70);
+}
+.form_login > div:nth-child(1) header{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: #6b6a6f 2px solid;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white
+}
+.form_login > div:nth-child(1) section{
+    padding-top: 25px;
+    border-bottom: #6b6a6f 2px solid;
+}
+.form_login > div:nth-child(1) section label{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+}
+.form_login > div:nth-child(1) section input{
+    margin-bottom: 25px
+}
+.form_login > div:nth-child(1) section input[type=submit]{
+    width: 100%
+}
+.form_login > div:nth-child(1) footer{
+    padding-bottom: 25px
+}
+.form_login > div:nth-child(1) footer button{
+    width: 100%;
+    margin-top: 15px;
+    text-align: center
+}
+.form_login > div:nth-child(1) footer button img{
+    float: left;
+    width: 25px;
+    height: 25px;
+}
+.form_login > div:nth-child(2) .title{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.form_login > div:nth-child(2) .label{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+.form_login > div:nth-child(2) .description{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: white;
+    margin-top: 25px;
+    font-weight: bold
+}
+body > header .icons_links .menu_icon{
+    display: none
+}
+@media(max-width: 900px){
+    body > header .icons_links .menu_icon{
+        display: inline-block
+    }
+    .nav_bar{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 30px;
+        z-index: 5000;
+        background-color: black;
+        display: none
+    }
+    .nav_bar .nav_bar_item a{
+        color: white;
+    }
+    .nav_bar .nav_bar_item{
+        display: block;
+    }
+    body > header{
+        padding-left: 15px;
+        padding-right: 15px
+    }
+    .form_login{
+        padding-left: 15px;
+        padding-right: 15px
+    }
+}
